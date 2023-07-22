@@ -4,7 +4,11 @@ const myVideo = document.createElement("video");
 myVideo.muted=true;
 // import Peer from "peer";
 
-var peer = new Peer();
+const peer = new Peer(undefined,{
+    path:"/peerjs",
+    host:"/",
+    port:"443"
+});
 
 let myVideoStream; 
 
