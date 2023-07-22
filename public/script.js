@@ -2,6 +2,7 @@ const socket=io('/');
 const videoGrid=document.getElementById("video-grid");
 const myVideo = document.createElement("video");
 myVideo.muted=true;
+// import Peer from "peer";
 
 var peer = new Peer();
 
